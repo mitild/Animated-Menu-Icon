@@ -41,6 +41,7 @@ Layout
 .wrapper {
   height: 50vh;
   width: 80vw;
+  max-width: 1000px;
   position: absolute;
   top: 0;
   bottom: 0;
