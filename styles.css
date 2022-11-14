@@ -1,17 +1,31 @@
 *, *::after, *::before {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
 body {
   background-color: #2A2537;
   padding: 2em;
+  font-family: 'Poppins', sans-serif;
+  color: #E7F0EA;
 }
 
 img {
   max-width: 100%;
   width: 150px;
+}
+
+.wrapper img {
+  width: 300px;
+}
+
+.wrapper p:nth-child(3) {
+  font-size: 1.7rem;
+  margin-top: .5em;
+}
+
+p {
+  margin: 0;
+  padding: 0;
 }
 
 /* ====================
@@ -22,6 +36,20 @@ Layout
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.wrapper {
+  height: 50vh;
+  width: 80vw;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  font-size: 5rem;
+  line-height: 1.2;
+  text-align: center;
 }
 
 .toogle {
@@ -73,7 +101,6 @@ Hamburger Menu Icon
   border-radius: 5px;
   margin-left: 0;
 } 
-
 
 /* Scrimba Style */
 
