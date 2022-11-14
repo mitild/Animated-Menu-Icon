@@ -1,0 +1,120 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #2A2537;
+  padding: 2em;
+}
+
+img {
+  max-width: 100%;
+  width: 150px;
+}
+
+/* ====================
+Layout
+====================== */
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toogle {
+  display: flex;
+  flex-direction: column;
+}
+
+.toogle span {
+  margin-bottom: 2px;
+  transition: all .4s;
+}
+
+/* ====================
+Hamburger Menu Icon
+====================== */
+
+/* Hamburger Style */
+
+.toogle span:nth-child(1) {
+  background-color: #C8B9FE;
+  width: 35px;
+  height: 9px;
+  border-radius: 5px;
+  position: relative;
+  left: 0;
+}
+
+.toogle span:nth-child(2) {
+  background-color: #DEEBE2;
+  width: 35px;
+  height: 9px;
+  border-radius: 5px;
+  position: relative;
+  left: 0;
+}
+
+.toogle div span:nth-child(1) {
+  background-color: #FCDDB4;
+  width: 11px;
+  height: 10px;
+  border-radius: 4px;
+  display: none; 
+}
+
+.toogle div span:nth-child(2) {
+  background-color: #FCDDB4;
+  width: 35px;
+  height: 9px;
+  border-radius: 5px;
+  margin-left: 0;
+} 
+
+
+/* Scrimba Style */
+
+.toogle:hover {
+  cursor: pointer;
+}
+
+.toogle:hover span:nth-child(1) {
+  background-color: #C8B9FE;
+  width: 30px;
+  height: 10px;
+  border-radius: 5px;
+  position: relative;
+  left: 29.5%;
+}
+
+.toogle:hover span:nth-child(2) {
+  background-color: #DEEBE2;
+  width: 20px;
+  height: 9px;
+  border-radius: 5px;
+  position: relative;
+  left: 29.5%;
+}
+
+.toogle:hover div span:nth-child(1) {
+  background-color: #FCDDB4;
+  width: 11px;
+  height: 10px;
+  border-radius: 4px;
+  position: relative;
+  left: -26%;
+  display: block;
+}
+
+.toogle:hover div span:nth-child(2) {
+  background-color: #FCDDB4;
+  width: 30px;
+  height: 10px;
+  border-radius: 5px;
+  margin-left: 2px;
+  position: relative;
+  left: -24%;
+}
